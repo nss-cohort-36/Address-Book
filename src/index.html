@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!-- Let's get started! Define two fieldsets, one for entering in a person's name, and one for entering in the person's address. In each fieldset, define a <label> element, and an <input> field for each of the piece of data our user will be providing. Make sure you put a button after all the fields with the text Save. -->
+
+    <fieldset>
+        <label for="fullName">Name</label>
+        <input type="text" id="fullName" placeholder="Enter person's full name" autofocus />
+    </fieldset>
+    <fieldset>
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Address" />
+    </fieldset>
+    <button id="saveEntry">Save Address</button>
+
+    <!-- Then add an HTML element to act as a container for all addresses. -->
+    <article id="addressList"> </article>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
