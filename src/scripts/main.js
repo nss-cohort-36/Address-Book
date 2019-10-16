@@ -12,14 +12,19 @@ document.querySelector("#saveEntry").addEventListener("click", event => {
     const address = document.querySelector("#address").value;
     // console.log(address)
 
-    container.innerHTML += `
-        <section>
-            <h1>${personName}</h1>
-            <div>${address}</div>
-        </section>
-    `
+    const h1Element = document.createElement("h1")
+    h1Element.textContent = personName
+    console.log("h1", h1Element)
+    h1Element.addEventListener("mouseover", () => console.log("H1 was clicked"))
+
+    const divElement = document.createElement("div")
+    divElement.textContent = address
+    console.log("div", divElement)
+
+    const sectionElement = document.createElement("section")
+    sectionElement.appendChild(h1Element)
+    sectionElement.appendChild(divElement)
+    console.log("section", sectionElement)
+
+    container.appendChild(sectionElement)    
 })
-
-
-
-
